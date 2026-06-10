@@ -1,0 +1,11 @@
+defaultProject: progetto-cloud-test-hrm
+defaultLocation: EU
+defaultDataset: analytics_431901473
+ 
+defaultAssertionDataset: analytics_assertions
+ 
+dataformCoreVersion: 3.0.0
+ 
+vars:
+  environment: production
+  ga4_dataset: analytics_431901473

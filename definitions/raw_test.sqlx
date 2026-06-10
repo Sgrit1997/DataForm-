@@ -1,0 +1,13 @@
+config {
+  type: "view",
+  database: 'progetto-cloud-test-hrm',
+  schema: 'analytics_431901473',
+  name: 'raw_data',
+  tags: ["ga4", "raw", "events"],
+  description: "Vista RAW degli eventi GA4 filtrata sulla target date"
+}
+ 
+SELECT 
+   * 
+FROM 'progetto-cloud-test-hrm.analytics_431901473.events_*'
+ 
