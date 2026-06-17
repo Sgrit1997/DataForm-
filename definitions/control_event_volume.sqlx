@@ -1,0 +1,14 @@
+config {
+  type: "table",
+  description: "Controllo volume eventi giornalieri",
+  database: 'progetto-cloud-test-hrm',
+  schema: 'analytics_431901473',
+  name: 'control_events'
+}
+
+SELECT
+  event_date,
+  COUNT(*) AS total_events
+FROM ${ref("raw_test")}
+GROUP BY event_date
+ORDER BY event_date DESC
